@@ -1,12 +1,14 @@
 package th.ac.kmitl.science.comsci.example.models;
 
-public class Seller{
+public class Seller {
 
     private String id;
-    private String globalId;
-    private String name;
-    private String taxId;
 
+    private String globalId;
+
+    private String name;
+
+    private String taxId;
 
     public String getId() {
         return id;
