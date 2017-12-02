@@ -23,10 +23,10 @@ public class SellerTest {
         seller.setName(name);
         seller.setTaxId(taxId);
 
-        Assert.assertEquals(seller.getId(),id);
-        Assert.assertEquals(seller.getGlobalId(),globalId);
-        Assert.assertEquals(seller.getName(),name);
-        Assert.assertEquals(seller.getTaxId(),taxId);
+        Assert.assertEquals(seller.getId(), id);
+        Assert.assertEquals(seller.getGlobalId(), globalId);
+        Assert.assertEquals(seller.getName(), name);
+        Assert.assertEquals(seller.getTaxId(), taxId);
     }
 
 }
