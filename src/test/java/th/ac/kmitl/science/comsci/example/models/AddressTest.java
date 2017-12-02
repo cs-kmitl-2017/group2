@@ -11,7 +11,7 @@ public class AddressTest {
 
         String postCode = "10540";
 
-        String buildingName = "";
+        String buildingName = "Chalong Apartment";
 
         String lineOne = "419/287 M.9 PremruthaiVillage Soi 6 Bangna-Trad";
 
