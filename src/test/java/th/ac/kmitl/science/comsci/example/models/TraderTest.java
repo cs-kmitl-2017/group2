@@ -16,7 +16,7 @@ public class TraderTest {
 
         String taxId = "TId58050276";
 
-        String uriId = "www.mkproduct.com";
+        String uriId = "mkproductinfo@mkproduct.com";
 
         String email = "mkproductinfo@mkproduct.com";
 
