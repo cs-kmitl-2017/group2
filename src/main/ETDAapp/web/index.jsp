@@ -3,7 +3,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>TaxInvoice</title>
+        <title>ใบกำกับภาษีอิเล็กทรอนิกส์</title>
     </head>
     <body>
         <h1>ใบกำกับภาษีอิเล็กทรอนิกส์</h1>
