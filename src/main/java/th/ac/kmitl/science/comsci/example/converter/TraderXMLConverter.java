@@ -41,7 +41,12 @@ public class TraderXMLConverter {
                 +"\n</ram:"+traderTag+">"
                 +"\n<ram:SpecifiedClLegalOrganization> "
                 +"\n\t<ram:ID> "+taxId+" </ram:ID>"
-                +"\n</ram:SpecifiedClLegalOrganization> ";
+                +"\n</ram:SpecifiedClLegalOrganization> "
+                +"\n<ram:DefinedCITradeContact> "
+                +"\n</ram:DefinedCITradeContact>"
+                +"\n<ram:EmailURICIUniversalCommunication>"
+                +"\n\t<ram:URIID> "+uriId+"</ram:URIID>"
+                +"\n\t<ram:CompleteNumber> "+email+"</ram:CompleteNumber>";
         this.xmlCode = xmlCode;
     }
 
