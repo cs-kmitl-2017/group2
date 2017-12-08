@@ -3,10 +3,10 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>ใบกำกับภาษีสำหรับผู้ซื้อ</title>
     </head>
     <body>
-        <h2>ขอ้มูลของผู้ซื้อ</h2>
+        <h2>ข้อมูลของผู้ซื้อ</h2>
         <h4>
         <table width="400">
             <tr>
