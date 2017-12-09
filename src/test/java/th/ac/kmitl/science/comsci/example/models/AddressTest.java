@@ -7,35 +7,26 @@ public class AddressTest {
 
     @Test
     public void testInputAddress() {
-        Address address = new Address();
 
-        address.setPostCode(AddressMock.postCode);
-        address.setBuildingName(AddressMock.buildingName);
-        address.setLineOne(AddressMock.lineOne);
-        address.setLineTwo(AddressMock.lineTwo);
-        address.setLineThree(AddressMock.lineThree);
-        address.setLineFour(AddressMock.lineFour);
-        address.setLineFive(AddressMock.lineFive);
-        address.setStreetName(AddressMock.streetName);
-        address.setCityName(AddressMock.cityName);
-        address.setCitySubDivisionName(AddressMock.citySubDivisionName);
-        address.setCountry(AddressMock.country);
-        address.setCountrySubDivision(AddressMock.countrySubDivision);
-        address.setBuildingNumber(AddressMock.buildingNumber);
-        
-        Assert.assertEquals(address.getPostCode(), AddressMock.postCode);
-        Assert.assertEquals(address.getBuildingName(), AddressMock.buildingName);
-        Assert.assertEquals(address.getLineOne(), AddressMock.lineOne);
-        Assert.assertEquals(address.getLineTwo(), AddressMock.lineTwo);
-        Assert.assertEquals(address.getLineThree(), AddressMock.lineThree);
-        Assert.assertEquals(address.getLineFour(), AddressMock.lineFour);
-        Assert.assertEquals(address.getLineFive(), AddressMock.lineFive);
-        Assert.assertEquals(address.getStreetName(), AddressMock.streetName);
-        Assert.assertEquals(address.getCityName(), AddressMock.cityName);
-        Assert.assertEquals(address.getCitySubDivisionName(), AddressMock.citySubDivisionName);
-        Assert.assertEquals(address.getCountry(), AddressMock.country);
-        Assert.assertEquals(address.getCountrySubDivision(), AddressMock.countrySubDivision);
-        Assert.assertEquals(address.getBuildingNumber(), AddressMock.buildingNumber);
+        AddressMock addressMock = new AddressMock();
+
+        Address address = new Address(addressMock.postCode, addressMock.buildingName, addressMock.lineOne, addressMock.lineTwo,
+                addressMock.lineThree, addressMock.lineFour, addressMock.lineFive, addressMock.streetName, addressMock.cityName,
+                addressMock.citySubDivisionName, addressMock.country, addressMock.countrySubDivision, addressMock.buildingNumber);
+
+        Assert.assertEquals(address.getPostCode(), addressMock.postCode);
+        Assert.assertEquals(address.getBuildingName(), addressMock.buildingName);
+        Assert.assertEquals(address.getLineOne(), addressMock.lineOne);
+        Assert.assertEquals(address.getLineTwo(), addressMock.lineTwo);
+        Assert.assertEquals(address.getLineThree(), addressMock.lineThree);
+        Assert.assertEquals(address.getLineFour(), addressMock.lineFour);
+        Assert.assertEquals(address.getLineFive(), addressMock.lineFive);
+        Assert.assertEquals(address.getStreetName(), addressMock.streetName);
+        Assert.assertEquals(address.getCityName(), addressMock.cityName);
+        Assert.assertEquals(address.getCitySubDivisionName(), addressMock.citySubDivisionName);
+        Assert.assertEquals(address.getCountry(), addressMock.country);
+        Assert.assertEquals(address.getCountrySubDivision(), addressMock.countrySubDivision);
+        Assert.assertEquals(address.getBuildingNumber(), addressMock.buildingNumber);
 
     }
 }
