@@ -7,7 +7,6 @@ public class AddressTest {
 
     @Test
     public void testInputAddress() {
-        Address address = new Address();
 
         String postCode = "10540";
 
@@ -27,15 +26,7 @@ public class AddressTest {
 
         String buildingNumber = "419/287";
 
-        address.setPostCode(postCode);
-        address.setBuildingName(buildingName);
-        address.setLineOne(lineOne);
-        address.setLineTwo(lineTwo);
-        address.setLineThree(lineOne);
-        address.setLineFour()(lineTwo);
-        address.setLineFive(lineThree);
-        address.setStreetName(streetName);
-        address.setBuildingNumber(buildingNumber);
+        Address address = new Address(postCode, buildingName, lineOne, lineTwo, lineThree, lineFour, lineFive, streetName, buildingNumber);
 
         Assert.assertEquals(address.getPostCode(), postCode);
         Assert.assertEquals(address.getBuildingName(), buildingName);
