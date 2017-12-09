@@ -28,6 +28,25 @@ public class Address {
     
     private String buildingNumber;
 
+    public Address(String postCode, String buildingName, String lineOne, String lineTwo,
+                   String lineThree, String lineFour, String lineFiveive, String streetName,
+                   Mapping cityName, Mapping citySubDivisionName, String country, Mapping countrySubDivision,
+                   String buildingNumber) {
+        setPostCode(postCode);
+        setBuildingName(buildingName);
+        setLineOne(lineOne);
+        setLineTwo(lineTwo);
+        setLineThree(lineThree);
+        setLineFour(lineFour);
+        setLineFive(lineFive);
+        setStreetName(streetName);
+        setCityName(cityName);
+        setCitySubDivisionName(citySubDivisionName);
+        setCountry(country);
+        setCountrySubDivision(countrySubDivision);
+        setBuildingNumber(buildingNumber);
+    }
+
     public String getPostCode() {
         return postCode;
     }
