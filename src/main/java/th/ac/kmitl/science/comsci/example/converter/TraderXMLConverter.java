@@ -30,10 +30,10 @@ public class TraderXMLConverter {
         taxId = trader.getTaxId();
         uriId = trader.getUriId();
         email = trader.getEmail();
-        setXml();
+        convert();
     }
 
-    public void setXml() {
+    public static void convert() {
         String xmlCode = "<ram:"+traderTag+"> "
                 +"\n\t<ram:ID> "+id+" </ram:ID>"
                 +"\n\t<ram:GlobalID> "+globalId+" </ram:GlobalID>"
