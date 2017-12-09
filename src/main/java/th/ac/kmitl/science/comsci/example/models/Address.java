@@ -17,7 +17,15 @@ public class Address {
     private String lineFive;
 
     private String streetName;
-
+    
+    private String cityName;
+    
+    private String citySubDivisionName;
+    
+    private String country;
+    
+    private String countrySubDivision;
+    
     private String buildingNumber;
 
     public String getPostCode() {
@@ -83,7 +91,39 @@ public class Address {
     public void setStreetName(String streetName) {
         this.streetName = streetName;
     }
+    
+    public String getCityName() {
+        return cityName;
+    }
 
+    public void setCityName(String cityName) {
+        this.cityName = cityName;
+    }
+    
+    public String getCitySubDivisionName() {
+        return citySubDivisionName;
+    }
+
+    public void setCitySubDivisionName(String citySubDivisionName) {
+        this.citySubDivisionName = citySubDivisionName;
+    }
+    
+    public String getCountry() {
+        return country;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
+    }
+    
+    public String getCountrySubDivision() {
+        return countrySubDivision;
+    }
+
+    public void setCountrySubDivision(String countrySubDivision) {
+        this.countrySubDivision = countrySubDivision;
+    }
+    
     public String getBuildingNumber() {
         return buildingNumber;
     }
