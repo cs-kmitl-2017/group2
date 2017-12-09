@@ -7,7 +7,24 @@ public class AddressTest {
 
     @Test
     public void testInputAddress() {
-        Address address = new Address();
+
+        String postCode = "10540";
+
+        String buildingName = "Chalong Apartment";
+
+        String lineOne = "419/287 M.9 PremruthaiVillage Soi 6 Bangna-Trad";
+
+        String lineTwo = "Bangchalong Bangphee Samutprakan, Thailand";
+
+        String lineThree = "6";
+
+        String lineFour = "PremruthaiVillage";
+
+        String lineFive = "9";
+
+        String streetName = "Bangna-Trad";
+
+        String buildingNumber = "419/287";
 
         address.setPostCode(AddressMock.postCode);
         address.setBuildingName(AddressMock.buildingName);
@@ -36,6 +53,7 @@ public class AddressTest {
         Assert.assertEquals(address.getCountry(), AddressMock.country);
         Assert.assertEquals(address.getCountrySubDivision(), AddressMock.countrySubDivision);
         Assert.assertEquals(address.getBuildingNumber(), AddressMock.buildingNumber);
+
 
     }
 }
