@@ -26,17 +26,34 @@ public class AddressTest {
 
         String buildingNumber = "419/287";
 
-        Address address = new Address(postCode, buildingName, lineOne, lineTwo, lineThree, lineFour, lineFive, streetName, buildingNumber);
+        address.setPostCode(AddressMock.postCode);
+        address.setBuildingName(AddressMock.buildingName);
+        address.setLineOne(AddressMock.lineOne);
+        address.setLineTwo(AddressMock.lineTwo);
+        address.setLineThree(AddressMock.lineThree);
+        address.setLineFour(AddressMock.lineFour);
+        address.setLineFive(AddressMock.lineFive);
+        address.setStreetName(AddressMock.streetName);
+        address.setCityName(AddressMock.cityName);
+        address.setCitySubDivisionName(AddressMock.citySubDivisionName);
+        address.setCountry(AddressMock.country);
+        address.setCountrySubDivision(AddressMock.countrySubDivision);
+        address.setBuildingNumber(AddressMock.buildingNumber);
+        
+        Assert.assertEquals(address.getPostCode(), AddressMock.postCode);
+        Assert.assertEquals(address.getBuildingName(), AddressMock.buildingName);
+        Assert.assertEquals(address.getLineOne(), AddressMock.lineOne);
+        Assert.assertEquals(address.getLineTwo(), AddressMock.lineTwo);
+        Assert.assertEquals(address.getLineThree(), AddressMock.lineThree);
+        Assert.assertEquals(address.getLineFour(), AddressMock.lineFour);
+        Assert.assertEquals(address.getLineFive(), AddressMock.lineFive);
+        Assert.assertEquals(address.getStreetName(), AddressMock.streetName);
+        Assert.assertEquals(address.getCityName(), AddressMock.cityName);
+        Assert.assertEquals(address.getCitySubDivisionName(), AddressMock.citySubDivisionName);
+        Assert.assertEquals(address.getCountry(), AddressMock.country);
+        Assert.assertEquals(address.getCountrySubDivision(), AddressMock.countrySubDivision);
+        Assert.assertEquals(address.getBuildingNumber(), AddressMock.buildingNumber);
 
-        Assert.assertEquals(address.getPostCode(), postCode);
-        Assert.assertEquals(address.getBuildingName(), buildingName);
-        Assert.assertEquals(address.getLineOne(), lineOne);
-        Assert.assertEquals(address.getLineTwo(), lineTwo);
-        Assert.assertEquals(address.getLineThree(), lineThree);
-        Assert.assertEquals(address.getLineFour(), lineFour);
-        Assert.assertEquals(address.getLineFive(), lineFive);
-        Assert.assertEquals(address.getStreetName(), streetName);
-        Assert.assertEquals(address.getBuildingNumber(), buildingNumber);
 
     }
 }
