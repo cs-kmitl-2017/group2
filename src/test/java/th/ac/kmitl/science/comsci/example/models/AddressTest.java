@@ -1,5 +1,8 @@
 package th.ac.kmitl.science.comsci.example.models;
 
+import th.ac.kmitl.science.comsci.example.utilities.CityMapping;
+import th.ac.kmitl.science.comsci.example.utilities.CitySubDivisionMapping;
+import th.ac.kmitl.science.comsci.example.utilities.CountrySubDivisionMapping;
 import junit.framework.Assert;
 import org.junit.Test;
 
@@ -25,13 +28,13 @@ public class AddressTest {
 
         String streetName = "Bangna-Trad";
         
-        String cityName = "Bang Phee";
+        Mapping cityName = CityMapping.getMapping();
         
-        String citySubDivisionName = "Bang Chalong";
+        Mapping citySubDivisionName = CitySubDivisionMapping.getMapping();
     
         String country = "Thailand";
     
-        String countrySubDivision = "Samut Prakan";
+        Mapping countrySubDivision = CountrySubDivisionMapping.getMapping();
 
         String buildingNumber = "419/287";
 

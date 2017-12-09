@@ -1,5 +1,7 @@
 package th.ac.kmitl.science.comsci.example.models;
 
+import th.ac.kmitl.science.comsci.example.models.Mapping;
+
 public class Address {
 
     private String postCode;
@@ -18,13 +20,13 @@ public class Address {
 
     private String streetName;
     
-    private String cityName;
+    private Mapping cityName;
     
-    private String citySubDivisionName;
+    private Mapping citySubDivisionName;
     
     private String country;
     
-    private String countrySubDivision;
+    private Mapping countrySubDivision;
     
     private String buildingNumber;
 
@@ -92,19 +94,19 @@ public class Address {
         this.streetName = streetName;
     }
     
-    public String getCityName() {
+    public Mapping getCityName() {
         return cityName;
     }
 
-    public void setCityName(String cityName) {
+    public void setCityName(Mapping cityName) {
         this.cityName = cityName;
     }
     
-    public String getCitySubDivisionName() {
+    public Mapping getCitySubDivisionName() {
         return citySubDivisionName;
     }
 
-    public void setCitySubDivisionName(String citySubDivisionName) {
+    public void setCitySubDivisionName(Mapping citySubDivisionName) {
         this.citySubDivisionName = citySubDivisionName;
     }
     
@@ -116,11 +118,11 @@ public class Address {
         this.country = country;
     }
     
-    public String getCountrySubDivision() {
+    public Mapping getCountrySubDivision() {
         return countrySubDivision;
     }
 
-    public void setCountrySubDivision(String countrySubDivision) {
+    public void setCountrySubDivision(Mapping countrySubDivision) {
         this.countrySubDivision = countrySubDivision;
     }
     

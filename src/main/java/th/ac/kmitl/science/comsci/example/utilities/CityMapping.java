@@ -1,14 +1,15 @@
-package th.ac.kmitl.science.comsci.example.models;
+package th.ac.kmitl.science.comsci.example.utilities;
 
+import th.ac.kmitl.science.comsci.example.models.Mapping;
 import java.util.Map;
 import java.util.HashMap;
 
-public class CityName extends MappingToId {
+public class CityMapping extends Mapping {
     private Map<String, String> mappingCityName = new HashMap<>();
     private String CityNameID;
-    private static MappingToId map = null; 
+    private static Mapping map = null; 
     
-    private CityName() {
+    private CityMapping() {
         mappingCityName.put("mueang samut prakan", "1101");
         mappingCityName.put("bang bo", "1102");
         mappingCityName.put("bang phli", "1103");
@@ -17,9 +18,9 @@ public class CityName extends MappingToId {
         mappingCityName.put("bang sao thong", "1106");
     }
     
-    public static MappingToId getMapping() {
+    public static Mapping getMapping() {
         if (map == null) {
-                map = new CityName();
+                map = new CityMapping();
         }
         return map;
     }

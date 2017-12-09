@@ -1,13 +1,14 @@
-package th.ac.kmitl.science.comsci.example.models;
+package th.ac.kmitl.science.comsci.example.utilities;
 
+import th.ac.kmitl.science.comsci.example.models.Mapping;
 import junit.framework.Assert;
 import org.junit.Test;
 
-public class CityNameTest {
+public class CityMappingTest {
     
     @Test
-    public void testCityName() {
-        MappingToId mappingCityName = CityName.getMapping();
+    public void testCityMapping() {
+        Mapping mappingCityName = CityMapping.getMapping();
         Assert.assertEquals(mappingCityName.mappingtosetId("Mueang Samut Prakan"), "1101");
         Assert.assertEquals(mappingCityName.mappingtosetId("Bang Bo"), "1102");
         Assert.assertEquals(mappingCityName.mappingtosetId("Bang Phli"), "1103");
