@@ -5,11 +5,12 @@ import java.util.Map;
 import java.util.HashMap;
 
 public class CitySubDivisionMapping extends Mapping {
+    
     private Map<String, String> mappingCitySubDivisionName = new HashMap<>();
     private String CitySubDivisionID;
-    private static Mapping map = null; 
+    private static Mapping map = null;
     
-    private CitySubDivisionMapping() {
+    public CitySubDivisionMapping() {
         mappingCitySubDivisionName.put("bang phli yai", "110301");
         mappingCitySubDivisionName.put("bang kaeo", "110302");
         mappingCitySubDivisionName.put("bang pla", "110303");
@@ -24,9 +25,9 @@ public class CitySubDivisionMapping extends Mapping {
         }
         return map;
     }
-
+    
     @Override
-    public String mappingtosetId(String name) { 
+    public String mapper(String name) { 
         CitySubDivisionID = mappingCitySubDivisionName.get(name.toLowerCase());
         return CitySubDivisionID;
     }

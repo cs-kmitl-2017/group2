@@ -5,11 +5,12 @@ import java.util.Map;
 import java.util.HashMap;
 
 public class CountrySubDivisionMapping extends Mapping {
+    
     private Map<String, String> mappingCountrySubDivision = new HashMap<>();
     private String CountrySubDivisionID;
-    private static Mapping map = null; 
-    
-    private CountrySubDivisionMapping() {
+    private static Mapping map = null;
+
+    public CountrySubDivisionMapping() {
         mappingCountrySubDivision.put("bangkok", "10");
         mappingCountrySubDivision.put("samut prakan", "11");
         mappingCountrySubDivision.put("nonthaburi", "12");
@@ -88,16 +89,16 @@ public class CountrySubDivisionMapping extends Mapping {
         mappingCountrySubDivision.put("yala", "95");
         mappingCountrySubDivision.put("narathiwat", "96");
     }
-    
+
     public static Mapping getMapping() {
         if (map == null) {
                 map = new CountrySubDivisionMapping();
         }
         return map;
     }
-
+    
     @Override
-    public String mappingtosetId(String name) { 
+    public String mapper(String name) { 
         CountrySubDivisionID = mappingCountrySubDivision.get(name.toLowerCase());
         return CountrySubDivisionID;
     }

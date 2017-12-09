@@ -1,7 +1,5 @@
 package th.ac.kmitl.science.comsci.example.models;
 
-import th.ac.kmitl.science.comsci.example.models.Mapping;
-
 public class Address {
 
     private String postCode;

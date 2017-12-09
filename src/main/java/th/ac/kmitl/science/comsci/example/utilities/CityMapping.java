@@ -24,9 +24,9 @@ public class CityMapping extends Mapping {
         }
         return map;
     }
-
+    
     @Override
-    public String mappingtosetId(String name) { 
+    public String mapper(String name) { 
         CityNameID = mappingCityName.get(name.toLowerCase());
         return CityNameID;
     }
